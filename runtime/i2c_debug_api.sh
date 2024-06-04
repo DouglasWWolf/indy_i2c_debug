@@ -41,7 +41,7 @@ is_idle()
 wait_idle()
 {
     while [ $(read_reg $REG_IDLE) -eq 0 ]; do
-        sleep .1
+        sleep .001
     done
 }
 #==============================================================================
@@ -134,7 +134,7 @@ read()
     pcireg $REG_READ $regnum
 
     # Wait plenty of time for a read-request to complete
-    sleep .2
+    sleep .1
 
     # Fetch the status of the I2C transaction
     local status=$(read_reg $REG_I2C_STATUS)
