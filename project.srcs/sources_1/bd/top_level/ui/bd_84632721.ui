@@ -1,0 +1,51 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-420,-303",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXIS -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port M_AXIS -pg 1 -lvl 3 -x 520 -y 120 -defaultsOSRD
+preplace port port-id_s_axis_aresetn -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_s_axis_aclk -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_m_axis_aclk -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_m_axis_aresetn -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace inst cdc -pg 1 -lvl 1 -x 140 -y 60 -defaultsOSRD -pinDir S_AXIS left -pinY S_AXIS 0L -pinDir M_AXIS right -pinY M_AXIS 60R -pinDir s_axis_aresetn left -pinY s_axis_aresetn 20L -pinDir s_axis_aclk left -pinY s_axis_aclk 40L -pinDir m_axis_aclk left -pinY m_axis_aclk 60L
+preplace inst packetizer -pg 1 -lvl 2 -x 380 -y 120 -swap {0 1 2 3 4 5 6 7 8 9 11 10} -defaultsOSRD -pinDir S_AXIS left -pinY S_AXIS 0L -pinDir M_AXIS right -pinY M_AXIS 0R -pinDir s_axis_aresetn left -pinY s_axis_aresetn 80L -pinDir s_axis_aclk left -pinY s_axis_aclk 60L
+preplace netloc source_200Mhz_resetn 1 0 1 NJ 80
+preplace netloc source_200Mhz_clk 1 0 1 NJ 100
+preplace netloc eth_0_gt_txusrclk2 1 0 2 20 180 NJ
+preplace netloc s_axis_aresetn1_1 1 0 2 NJ 200 NJ
+preplace netloc cdc_M_AXIS 1 1 1 N 120
+preplace netloc data_gen_AXIS 1 0 1 NJ 60
+preplace netloc cdc1_M_AXIS 1 2 1 N 120
+levelinfo -pg 1 0 140 380 520
+pagesize -pg 1 -db -bbox -sgen -160 0 630 260
+",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-425,-268",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXIS -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace port M_AXIS -pg 1 -lvl 3 -x 530 -y 100 -defaultsOSRD
+preplace port port-id_s_axis_aresetn -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port port-id_s_axis_aclk -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_s_axis_aclk1 -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port port-id_s_axis_aresetn1 -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace inst cdc -pg 1 -lvl 1 -x 140 -y 80 -defaultsOSRD
+preplace inst packetizer -pg 1 -lvl 2 -x 390 -y 100 -defaultsOSRD
+preplace netloc source_200Mhz_resetn 1 0 1 NJ 70
+preplace netloc source_200Mhz_clk 1 0 1 NJ 90
+preplace netloc eth_0_gt_txusrclk2 1 0 2 20 180 270J
+preplace netloc eth_0_stream_resetn 1 0 2 NJ 170 260J
+preplace netloc cdc_M_AXIS 1 1 1 N 80
+preplace netloc data_gen_AXIS 1 0 1 NJ 50
+preplace netloc cdc1_M_AXIS 1 2 1 N 100
+levelinfo -pg 1 0 140 390 530
+pagesize -pg 1 -db -bbox -sgen -160 0 630 190
+"
+}
+

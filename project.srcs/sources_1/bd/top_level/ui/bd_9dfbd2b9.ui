@@ -1,0 +1,127 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"0.833333",
+   "Default View_TopLeft":"-346,-10",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_resetn -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port port-id_I2C_MUX_ENABLE -pg 1 -lvl 3 -x 830 -y 660 -defaultsOSRD
+preplace port port-id_I2C_CONFIG -pg 1 -lvl 3 -x 830 -y 680 -defaultsOSRD
+preplace port port-id_PASSTHRU -pg 1 -lvl 3 -x 830 -y 740 -defaultsOSRD
+preplace port port-id_PASSTHRU_wstrobe -pg 1 -lvl 3 -x 830 -y 800 -defaultsOSRD
+preplace portBus QSFP_MODSEL_L -pg 1 -lvl 3 -x 830 -y 600 -defaultsOSRD
+preplace portBus QSFP_RESET_L -pg 1 -lvl 3 -x 830 -y 620 -defaultsOSRD
+preplace portBus QSFP_LP -pg 1 -lvl 3 -x 830 -y 640 -defaultsOSRD
+preplace portBus DEV_ADDR -pg 1 -lvl 3 -x 830 -y 460 -defaultsOSRD
+preplace portBus I2C_REG_NUM_LEN -pg 1 -lvl 3 -x 830 -y 700 -defaultsOSRD
+preplace portBus I2C_REG_NUM -pg 1 -lvl 3 -x 830 -y 500 -defaultsOSRD
+preplace portBus I2C_READ_LEN -pg 1 -lvl 3 -x 830 -y 720 -defaultsOSRD
+preplace portBus I2C_READ_LEN_wstrobe -pg 1 -lvl 3 -x 830 -y 480 -defaultsOSRD
+preplace portBus I2C_TX_DATA -pg 1 -lvl 3 -x 830 -y 580 -defaultsOSRD
+preplace portBus I2C_WRITE_LEN -pg 1 -lvl 3 -x 830 -y 540 -defaultsOSRD
+preplace portBus I2C_WRITE_LEN_wstrobe -pg 1 -lvl 3 -x 830 -y 520 -defaultsOSRD
+preplace portBus I2C_TLIMIT_USEC -pg 1 -lvl 3 -x 830 -y 560 -defaultsOSRD
+preplace portBus I2C_RX_DATA -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace portBus I2C_STATUS -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace portBus idle -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace portBus PASSTHRU_WDATA -pg 1 -lvl 3 -x 830 -y 760 -defaultsOSRD
+preplace portBus PASSTHRU_ADDR -pg 1 -lvl 3 -x 830 -y 780 -defaultsOSRD
+preplace portBus I2C_TRANSACT_USEC -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 2 -x 710 -y 60 -swap {0 4 7 8 10 1 2 9 11 12 13 3 5 6 14 15} -defaultsOSRD -pinDir clk left -pinY clk 0L -pinBusDir probe0 left -pinBusY probe0 80L -pinBusDir probe1 left -pinBusY probe1 180L -pinBusDir probe2 left -pinBusY probe2 200L -pinBusDir probe3 left -pinBusY probe3 240L -pinBusDir probe4 left -pinBusY probe4 20L -pinBusDir probe5 left -pinBusY probe5 40L -pinBusDir probe6 left -pinBusY probe6 220L -pinBusDir probe7 left -pinBusY probe7 260L -pinBusDir probe8 left -pinBusY probe8 280L -pinBusDir probe9 left -pinBusY probe9 300L -pinBusDir probe10 left -pinBusY probe10 60L -pinBusDir probe11 left -pinBusY probe11 100L -pinBusDir probe12 left -pinBusY probe12 160L -pinBusDir probe13 left -pinBusY probe13 320L -pinBusDir probe14 left -pinBusY probe14 340L
+preplace inst debugger -pg 1 -lvl 1 -x 280 -y 220 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 28 29 30 31 32 21 33 22 34 23 27 25 24 26 35 36 37 38 39 40 41} -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir clk left -pinY clk 20L -pinDir resetn left -pinY resetn 40L -pinBusDir csm_state right -pinBusY csm_state 0R -pinBusDir QSFP_MODSEL_L right -pinBusY QSFP_MODSEL_L 380R -pinBusDir QSFP_RESET_L right -pinBusY QSFP_RESET_L 400R -pinBusDir QSFP_LP right -pinBusY QSFP_LP 420R -pinDir I2C_MUX_ENABLE right -pinY I2C_MUX_ENABLE 440R -pinDir I2C_CONFIG right -pinY I2C_CONFIG 460R -pinBusDir I2C_DEV_ADDR right -pinBusY I2C_DEV_ADDR 20R -pinBusDir I2C_REG_NUM_LEN right -pinBusY I2C_REG_NUM_LEN 480R -pinBusDir I2C_REG_NUM right -pinBusY I2C_REG_NUM 40R -pinBusDir I2C_READ_LEN right -pinBusY I2C_READ_LEN 500R -pinDir I2C_READ_START right -pinY I2C_READ_START 60R -pinBusDir I2C_TX_DATA right -pinBusY I2C_TX_DATA 140R -pinBusDir I2C_WRITE_LEN right -pinBusY I2C_WRITE_LEN 100R -pinDir I2C_WRITE_START right -pinY I2C_WRITE_START 80R -pinBusDir I2C_TLIMIT_USEC right -pinBusY I2C_TLIMIT_USEC 120R -pinBusDir I2C_RX_DATA left -pinBusY I2C_RX_DATA 60L -pinBusDir I2C_STATUS left -pinBusY I2C_STATUS 80L -pinDir I2C_IDLE left -pinY I2C_IDLE 100L -pinDir PASSTHRU right -pinY PASSTHRU 520R -pinBusDir PASSTHRU_WDATA right -pinBusY PASSTHRU_WDATA 540R -pinBusDir PASSTHRU_ADDR right -pinBusY PASSTHRU_ADDR 560R -pinDir PASSTHRU_wstrobe right -pinY PASSTHRU_wstrobe 580R
+preplace netloc source_200Mhz_clk 1 0 2 20 60 NJ
+preplace netloc source_200Mhz_resetn 1 0 1 NJ 260
+preplace netloc debugger_0_QSFP_MODSEL_L 1 1 2 NJ 600 NJ
+preplace netloc debugger_0_QSFP_RESET_L 1 1 2 NJ 620 NJ
+preplace netloc debugger_0_QSFP_LP 1 1 2 NJ 640 NJ
+preplace netloc debugger_I2C_MUX_ENABLE 1 1 2 NJ 660 NJ
+preplace netloc debugger_I2C_CONFIG 1 1 2 NJ 680 NJ
+preplace netloc debugger_I2C_DEV_ADDR 1 1 2 600 460 NJ
+preplace netloc debugger_I2C_REG_NUM_LEN 1 1 2 NJ 700 NJ
+preplace netloc debugger_I2C_REG_NUM 1 1 2 580 500 NJ
+preplace netloc debugger_I2C_READ_LEN 1 1 2 NJ 720 NJ
+preplace netloc debugger_I2C_READ_START 1 1 2 560 480 NJ
+preplace netloc debugger_I2C_TX_DATA 1 1 2 480 580 NJ
+preplace netloc debugger_I2C_WRITE_LEN 1 1 2 520 540 NJ
+preplace netloc debugger_I2C_WRITE_START 1 1 2 540 520 NJ
+preplace netloc debugger_I2C_TLIMIT_USEC 1 1 2 500 560 NJ
+preplace netloc axi_iic_fe_0_o_I2C_RX_DATA 1 0 2 60 100 NJ
+preplace netloc axi_iic_fe_0_o_I2C_STATUS 1 0 2 40 80 NJ
+preplace netloc axi_iic_fe_0_idle 1 0 2 80 120 NJ
+preplace netloc debugger_PASSTHRU 1 1 2 NJ 740 NJ
+preplace netloc debugger_PASSTHRU_WDATA 1 1 2 NJ 760 NJ
+preplace netloc debugger_PASSTHRU_ADDR 1 1 2 NJ 780 NJ
+preplace netloc debugger_PASSTHRU_wstrobe 1 1 2 NJ 800 NJ
+preplace netloc axi_iic_fe_o_I2C_TRANSACT_USEC 1 0 2 NJ 160 NJ
+preplace netloc Net 1 1 1 N 220
+preplace netloc smartconnect_M00_AXI 1 0 1 NJ 220
+levelinfo -pg 1 0 280 710 830
+pagesize -pg 1 -db -bbox -sgen -250 0 1090 860
+",
+   "No Loops_ScaleFactor":"0.813953",
+   "No Loops_TopLeft":"-335,0",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_resetn -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_I2C_MUX_ENABLE -pg 1 -lvl 3 -x 680 -y 130 -defaultsOSRD
+preplace port port-id_I2C_CONFIG -pg 1 -lvl 3 -x 680 -y 150 -defaultsOSRD
+preplace port port-id_PASSTHRU -pg 1 -lvl 3 -x 680 -y 350 -defaultsOSRD
+preplace port port-id_PASSTHRU_wstrobe -pg 1 -lvl 3 -x 680 -y 410 -defaultsOSRD
+preplace portBus QSFP_MODSEL_L -pg 1 -lvl 3 -x 680 -y 70 -defaultsOSRD
+preplace portBus QSFP_RESET_L -pg 1 -lvl 3 -x 680 -y 90 -defaultsOSRD
+preplace portBus QSFP_LP -pg 1 -lvl 3 -x 680 -y 110 -defaultsOSRD
+preplace portBus probe1 -pg 1 -lvl 3 -x 680 -y 170 -defaultsOSRD
+preplace portBus I2C_REG_NUM_LEN -pg 1 -lvl 3 -x 680 -y 190 -defaultsOSRD
+preplace portBus probe2 -pg 1 -lvl 3 -x 680 -y 210 -defaultsOSRD
+preplace portBus I2C_READ_LEN -pg 1 -lvl 3 -x 680 -y 230 -defaultsOSRD
+preplace portBus probe6 -pg 1 -lvl 3 -x 680 -y 250 -defaultsOSRD
+preplace portBus probe9 -pg 1 -lvl 3 -x 680 -y 270 -defaultsOSRD
+preplace portBus probe7 -pg 1 -lvl 3 -x 680 -y 290 -defaultsOSRD
+preplace portBus probe3 -pg 1 -lvl 3 -x 680 -y 310 -defaultsOSRD
+preplace portBus probe8 -pg 1 -lvl 3 -x 680 -y 330 -defaultsOSRD
+preplace portBus probe5 -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace portBus probe4 -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace portBus probe10 -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace portBus PASSTHRU_WDATA -pg 1 -lvl 3 -x 680 -y 370 -defaultsOSRD
+preplace portBus PASSTHRU_ADDR -pg 1 -lvl 3 -x 680 -y 390 -defaultsOSRD
+preplace portBus probe11 -pg 1 -lvl 0 -x 0 -y 710 -defaultsOSRD
+preplace inst debugger -pg 1 -lvl 1 -x 230 -y 230 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 2 -x 570 -y 620 -defaultsOSRD
+preplace netloc debugger_dbg_csm_state 1 1 1 450 50n
+preplace netloc source_200Mhz_clk 1 0 2 50 470 NJ
+preplace netloc source_200Mhz_resetn 1 0 1 NJ 220
+preplace netloc debugger_0_QSFP_MODSEL_L 1 1 2 NJ 70 NJ
+preplace netloc debugger_0_QSFP_RESET_L 1 1 2 NJ 90 NJ
+preplace netloc debugger_0_QSFP_LP 1 1 2 NJ 110 NJ
+preplace netloc debugger_I2C_MUX_ENABLE 1 1 2 NJ 130 NJ
+preplace netloc debugger_I2C_CONFIG 1 1 2 NJ 150 NJ
+preplace netloc debugger_I2C_DEV_ADDR 1 1 2 480 170 NJ
+preplace netloc debugger_I2C_REG_NUM_LEN 1 1 2 NJ 190 NJ
+preplace netloc debugger_I2C_REG_NUM 1 1 2 470 210 NJ
+preplace netloc debugger_I2C_READ_LEN 1 1 2 NJ 230 NJ
+preplace netloc debugger_I2C_READ_START 1 1 2 460 250 NJ
+preplace netloc debugger_I2C_TX_DATA 1 1 2 420 270 NJ
+preplace netloc debugger_I2C_WRITE_LEN 1 1 2 430 290 NJ
+preplace netloc debugger_I2C_WRITE_START 1 1 2 440 310 NJ
+preplace netloc debugger_I2C_TLIMIT_USEC 1 1 2 410 330 NJ
+preplace netloc axi_iic_fe_0_o_I2C_RX_DATA 1 0 2 40 590 NJ
+preplace netloc axi_iic_fe_0_o_I2C_STATUS 1 0 2 30 570 NJ
+preplace netloc axi_iic_fe_0_idle 1 0 2 20 690 NJ
+preplace netloc debugger_PASSTHRU 1 1 2 NJ 350 NJ
+preplace netloc debugger_PASSTHRU_WDATA 1 1 2 NJ 370 NJ
+preplace netloc debugger_PASSTHRU_ADDR 1 1 2 NJ 390 NJ
+preplace netloc debugger_PASSTHRU_wstrobe 1 1 2 NJ 410 NJ
+preplace netloc axi_iic_fe_o_I2C_TRANSACT_USEC 1 0 2 NJ 710 NJ
+preplace netloc smartconnect_M00_AXI 1 0 1 NJ 180
+levelinfo -pg 1 0 230 570 680
+pagesize -pg 1 -db -bbox -sgen -150 0 880 820
+"
+}
+

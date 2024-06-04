@@ -1,0 +1,59 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-296,-171",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_s_axis_aresetn -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_s_axis_aclk -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_stream_aclk -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_stream_aresetn -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port cmac0_rx -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port user0_rx -pg 1 -lvl 2 -x 340 -y 80 -defaultsOSRD
+preplace port cmac0_tx -pg 1 -lvl 2 -x 340 -y 60 -defaultsOSRD
+preplace port user0_tx -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace inst cmac_cdc_0 -pg 1 -lvl 1 -x 170 -y 60 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 32 31 33} -defaultsOSRD -pinDir cmac0_rx left -pinY cmac0_rx 0L -pinDir cmac0_tx right -pinY cmac0_tx 0R -pinDir user0_rx right -pinY user0_rx 20R -pinDir user0_tx left -pinY user0_tx 20L -pinDir user_clk left -pinY user_clk 40L -pinDir user_resetn left -pinY user_resetn 60L -pinDir cmac0_clk left -pinY cmac0_clk 80L -pinDir cmac0_resetn left -pinY cmac0_resetn 120L -pinDir cmac1_clk left -pinY cmac1_clk 100L -pinDir cmac1_resetn left -pinY cmac1_resetn 140L
+preplace netloc eth_0_gt_txusrclk2 1 0 1 20 140n
+preplace netloc s_axis_aresetn1_1 1 0 1 20 180n
+preplace netloc source_200Mhz_clk 1 0 1 NJ 100
+preplace netloc source_200Mhz_resetn 1 0 1 NJ 120
+preplace netloc TX_IN_1 1 0 1 NJ 80
+preplace netloc TX_STREAM 1 1 1 NJ 60
+preplace netloc RX_IN_1 1 0 1 NJ 60
+preplace netloc cmac_cdc_0_user0_rx 1 1 1 NJ 80
+levelinfo -pg 1 0 170 340
+pagesize -pg 1 -db -bbox -sgen -170 0 460 260
+",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-507,-268",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port TX_IN -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port TX_OUT -pg 1 -lvl 4 -x 760 -y 150 -defaultsOSRD
+preplace port RX_OUT -pg 1 -lvl 4 -x 760 -y 330 -defaultsOSRD
+preplace port RX_IN -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port port-id_s_axis_aresetn -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_s_axis_aclk -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_stream_aclk -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_stream_aresetn -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace inst cdc -pg 1 -lvl 1 -x 150 -y 130 -defaultsOSRD
+preplace inst packetizer -pg 1 -lvl 2 -x 410 -y 150 -defaultsOSRD
+preplace inst rx_fifo -pg 1 -lvl 2 -x 410 -y 330 -defaultsOSRD
+preplace inst stream_ila -pg 1 -lvl 3 -x 640 -y 240 -defaultsOSRD
+preplace netloc eth_0_gt_txusrclk2 1 0 3 20 220 290 420 530J
+preplace netloc s_axis_aresetn1_1 1 0 3 NJ 20 270 430 540J
+preplace netloc source_200Mhz_clk 1 0 2 30 360 NJ
+preplace netloc source_200Mhz_resetn 1 0 1 NJ 120
+preplace netloc Conn1 1 2 2 NJ 330 NJ
+preplace netloc Conn2 1 0 3 NJ 40 280 230 N
+preplace netloc cdc1_M_AXIS 1 2 2 530 150 NJ
+preplace netloc cdc_M_AXIS 1 1 1 N 130
+preplace netloc data_gen_AXIS 1 0 1 NJ 100
+levelinfo -pg 1 0 150 410 640 760
+pagesize -pg 1 -db -bbox -sgen -150 0 860 440
+"
+}
+0

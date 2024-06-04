@@ -1,0 +1,55 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-296,-171",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port TX_IN -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port TX_OUT -pg 1 -lvl 4 -x 800 -y 140 -defaultsOSRD
+preplace port RX_OUT -pg 1 -lvl 4 -x 800 -y 260 -defaultsOSRD
+preplace port RX_IN -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port port-id_s_axis_aresetn -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_s_axis_aclk -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_stream_aclk -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_stream_aresetn -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace inst cdc -pg 1 -lvl 1 -x 160 -y 100 -defaultsOSRD -pinDir S_AXIS left -pinY S_AXIS 0L -pinDir M_AXIS right -pinY M_AXIS 0R -pinDir s_axis_aresetn left -pinY s_axis_aresetn 100L -pinDir s_axis_aclk left -pinY s_axis_aclk 120L -pinDir m_axis_aclk left -pinY m_axis_aclk 140L
+preplace netloc eth_0_gt_txusrclk2 1 0 1 N 240
+preplace netloc source_200Mhz_clk 1 0 1 N 220
+preplace netloc source_200Mhz_resetn 1 0 1 NJ 200
+preplace netloc data_gen_AXIS 1 0 1 NJ 100
+levelinfo -pg 1 0 160 440 680 800
+pagesize -pg 1 -db -bbox -sgen -170 0 910 460
+",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-283,-248",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port TX_IN -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port TX_OUT -pg 1 -lvl 4 -x 760 -y 150 -defaultsOSRD
+preplace port RX_OUT -pg 1 -lvl 4 -x 760 -y 330 -defaultsOSRD
+preplace port RX_IN -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port port-id_s_axis_aresetn -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_s_axis_aclk -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_stream_aclk -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_stream_aresetn -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace inst cdc -pg 1 -lvl 1 -x 150 -y 130 -defaultsOSRD
+preplace inst packetizer -pg 1 -lvl 2 -x 410 -y 150 -defaultsOSRD
+preplace inst rx_fifo -pg 1 -lvl 2 -x 410 -y 330 -defaultsOSRD
+preplace inst stream_ila -pg 1 -lvl 3 -x 640 -y 240 -defaultsOSRD
+preplace netloc eth_0_gt_txusrclk2 1 0 3 20 220 290 420 530J
+preplace netloc s_axis_aresetn1_1 1 0 3 NJ 20 270 430 540J
+preplace netloc source_200Mhz_clk 1 0 2 30 360 NJ
+preplace netloc source_200Mhz_resetn 1 0 1 NJ 120
+preplace netloc Conn1 1 2 2 NJ 330 NJ
+preplace netloc Conn2 1 0 3 NJ 40 280 230 N
+preplace netloc cdc1_M_AXIS 1 2 2 530 150 NJ
+preplace netloc cdc_M_AXIS 1 1 1 N 130
+preplace netloc data_gen_AXIS 1 0 1 NJ 100
+levelinfo -pg 1 0 150 410 640 760
+pagesize -pg 1 -db -bbox -sgen -150 0 860 440
+"
+}
+0

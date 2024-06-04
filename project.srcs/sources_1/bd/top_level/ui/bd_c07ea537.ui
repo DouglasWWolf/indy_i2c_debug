@@ -1,0 +1,43 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-233,-394",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port clk_200mhz -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace portBus clk -pg 1 -lvl 3 -x 710 -y 60 -defaultsOSRD
+preplace portBus resetn -pg 1 -lvl 3 -x 710 -y 120 -defaultsOSRD
+preplace portBus peripheral_reset -pg 1 -lvl 3 -x 710 -y 180 -defaultsOSRD
+preplace inst proc_sys_reset -pg 1 -lvl 2 -x 510 -y 120 -swap {0 4 1 2 3 6 7 8 9 5} -defaultsOSRD -pinDir slowest_sync_clk left -pinY slowest_sync_clk 0L -pinDir ext_reset_in left -pinY ext_reset_in 80L -pinDir aux_reset_in left -pinY aux_reset_in 20L -pinDir mb_debug_sys_rst left -pinY mb_debug_sys_rst 40L -pinDir dcm_locked left -pinY dcm_locked 60L -pinDir mb_reset right -pinY mb_reset 20R -pinBusDir bus_struct_reset right -pinBusY bus_struct_reset 40R -pinBusDir peripheral_reset right -pinBusY peripheral_reset 60R -pinBusDir interconnect_aresetn right -pinBusY interconnect_aresetn 80R -pinBusDir peripheral_aresetn right -pinBusY peripheral_aresetn 0R
+preplace inst one -pg 1 -lvl 1 -x 170 -y 200 -defaultsOSRD -pinBusDir dout right -pinBusY dout 0R
+preplace inst ibufds_200mhz -pg 1 -lvl 1 -x 170 -y 60 -defaultsOSRD -pinDir CLK_IN_D left -pinY CLK_IN_D 0L -pinBusDir IBUF_OUT right -pinBusY IBUF_OUT 0R
+preplace netloc clk_wiz_0_clk_out1 1 1 2 300 60 NJ
+preplace netloc one_dout 1 1 1 N 200
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 1 NJ 120
+preplace netloc proc_sys_reset_peripheral_reset 1 2 1 N 180
+preplace netloc Conn1 1 0 1 N 60
+levelinfo -pg 1 0 170 510 710
+pagesize -pg 1 -db -bbox -sgen -140 -20 910 260
+",
+   "No Loops_ScaleFactor":"1.0",
+   "No Loops_TopLeft":"-267,-254",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port clk_200mhz -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace portBus clk -pg 1 -lvl 3 -x 670 -y 60 -defaultsOSRD
+preplace portBus resetn -pg 1 -lvl 3 -x 670 -y 220 -defaultsOSRD
+preplace inst proc_sys_reset -pg 1 -lvl 2 -x 470 -y 180 -defaultsOSRD
+preplace inst clock_buffer_100MHz -pg 1 -lvl 1 -x 150 -y 60 -defaultsOSRD
+preplace inst one -pg 1 -lvl 1 -x 150 -y 160 -defaultsOSRD
+preplace netloc clock_buffer_100MHz_IBUF_OUT 1 1 2 270 60 NJ
+preplace netloc one_dout 1 1 1 NJ 160
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 1 NJ 220
+preplace netloc CLK_IN_D_0_1 1 0 1 NJ 60
+levelinfo -pg 1 0 150 470 670
+pagesize -pg 1 -db -bbox -sgen -120 0 800 280
+"
+}
+0
